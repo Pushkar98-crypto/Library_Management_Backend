@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_mangement_backend", "Library_mangement_backend.csproj", "{D4B682B1-47B3-45E4-9F8C-BAFBAF069609}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4B682B1-47B3-45E4-9F8C-BAFBAF069609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B682B1-47B3-45E4-9F8C-BAFBAF069609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B682B1-47B3-45E4-9F8C-BAFBAF069609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B682B1-47B3-45E4-9F8C-BAFBAF069609}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6289ABB-B497-45F7-B81C-8058C8E0F77C}
+	EndGlobalSection
+EndGlobal
