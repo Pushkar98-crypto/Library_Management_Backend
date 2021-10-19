@@ -40,11 +40,14 @@ namespace Library_mangement_backend.Repositories
             return await _context.Users.FindAsync(userId);
         }
 
-        public async Task<IEnumerable<User>> GetAuth(string email)
+        public async Task<User> GetAuth( User user)
         {
-            return await _context.Users.ToListAsync();
+            return await _context.Users.Where(u => u.email == user.email && u.password == user.password)
+                               .FirstOrDefaultAsync();
+
+
         }
 
-        
+
     }
 }

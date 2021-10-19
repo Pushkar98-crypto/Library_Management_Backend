@@ -12,11 +12,10 @@ namespace Library_mangement_backend.Models
         [Required]
         public int userId { get; set; }
 
-
-        [Required]
+   
         public string firstName { get; set; }
 
-        [Required ]
+       
         public string lastName { get; set; }
 
 
@@ -24,7 +23,7 @@ namespace Library_mangement_backend.Models
 
         public int pincode { get; set; }
 
-        [Required]
+       
         public string phoneNumber { get; set; }
 
         public  string typeUser { get; set; }
