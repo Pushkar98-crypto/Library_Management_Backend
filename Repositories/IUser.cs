@@ -17,6 +17,6 @@ namespace Library_mangement_backend.Repositories
 
         Task<User> Create(User user);
 
-        Task<IEnumerable<User>> GetAuth(string email);
+        Task<User> GetAuth(User user);
     }
 }

@@ -36,36 +36,24 @@ namespace Library_mangement_backend.Controllers
 
         }
 
-        [HttpGet]
-        [Route("{email}")]
+        [HttpPost]
+        [Route("login")]
 
-        public async Task<ActionResult<User>>GetUser(string email) 
+        public async Task<ActionResult<User>>GetUser([FromBody] User user) 
         {
-            var userArray= await _IUser.GetAuth(email);
-            
+            User response= await _IUser.GetAuth(user);
 
-            foreach(User user in userArray )
+            if(response!=null)
             {
-                if(user.email==email)
-                {
-                    return user;
-                }
-
+                return response;
             }
 
             return NoContent();
-
+            
+                        
 
         }
 
-
-        [HttpPost("authentucate")]
-
-        public IActionResult Authenticate([FromBody] UserCred usercred)
-       {
-            return Ok();
-        }
-    
 
 
     }
